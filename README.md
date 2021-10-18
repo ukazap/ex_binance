@@ -1,32 +1,33 @@
-# ExBinance
-[![Build Status](https://github.com/fremantle-capital/ex_binance/workflows/test/badge.svg?branch=main)](https://github.com/fremantle-capital/ex_binance/actions?query=workflow%3Atest)
-[![Coverage Status](https://coveralls.io/repos/github/fremantle-capital/ex_binance/badge.svg?branch=main)](https://coveralls.io/github/fremantle-capital/ex_binance?branch=main)
-[![hex.pm version](https://img.shields.io/hexpm/v/ex_binance.svg?style=flat)](https://hex.pm/packages/ex_binance)
+# ExTokocrypto
 
-Binance API Client for Elixir
+<!-- [![Build Status](https://github.com/ukazap/ex_tokocrypto/workflows/test/badge.svg?branch=main)](https://github.com/ukazap/ex_tokocrypto/actions?query=workflow%3Atest)
+[![Coverage Status](https://coveralls.io/repos/github/ukazap/ex_tokocrypto/badge.svg?branch=main)](https://coveralls.io/github/ukazap/ex_tokocrypto?branch=main)
+[![hex.pm version](https://img.shields.io/hexpm/v/ex_tokocrypto.svg?style=flat)](https://hex.pm/packages/ex_binance) -->
+
+Tokocrypto API Client for Elixir
 
 ## Installation
 
-Add the `ex_binance` package to your list of dependencies in `mix.exs`:
+Add the `ex_tokocrypto` package to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:ex_binance, "~> 0.0.10"}
+    {:ex_tokocrypto, "~> 0.0.10"}
   ]
 end
 ```
 
-Configure your Binance API credentials and optionally assign your spot, usd
+Configure your Tokocrypto API credentials and optionally assign your spot, usd
 margin & coin margin futures endpoints. By default production endpoints are used
 but you it can be useful to override these for testing.
 
 ```elixir
-config :ex_binance,
+config :ex_tokocrypto,
   api_key: System.fetch_env!("BINANCE_API_KEY"),
   secret_key: System.fetch_env!("BINANCE_API_SECRET")
 
-config :ex_binance,
+config :ex_tokocrypto,
   spot_domain: System.fetch_env!("BINANCE_API_SPOT_DOMAIN"),
   usd_margin_futures_domain: System.fetch_env!("BINANCE_API_USD_MARGIN_FUTURES_DOMAIN"),
   coin_margin_futures_domain: System.fetch_env!("BINANCE_API_COIN_MARGIN_FUTURES_DOMAIN"),
@@ -281,7 +282,8 @@ config :ex_binance,
 ## Authors
 
 * Alex Kwiatkowski - alex+git@fremantle.io
+* Ukaza Perdana - ukaza@perdana.dev
 
 ## License
 
-`ex_binance` is released under the [MIT license](./LICENSE)
+`ex_tokocrypto` is derived from [`ex_binance`](https://github.com/fremantle-industries/ex_binance) and is released under the [MIT license](./LICENSE).

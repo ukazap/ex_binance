@@ -1,2 +1,0 @@
-defmodule ExBinance do
-end

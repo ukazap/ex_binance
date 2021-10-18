@@ -1,6 +1,7 @@
 import Config
 
-config :ex_binance,
+config :ex_tokocrypto,
+  legacy_mode: System.fetch_env!("BINANCE_API_SPOT_DOMAIN") == "www.tokocrypto.com",
   spot_domain: System.fetch_env!("BINANCE_API_SPOT_DOMAIN"),
   usd_margin_futures_domain: System.fetch_env!("BINANCE_API_USD_MARGIN_FUTURES_DOMAIN"),
   coin_margin_futures_domain: System.fetch_env!("BINANCE_API_COIN_MARGIN_FUTURES_DOMAIN"),

@@ -1,9 +1,9 @@
-defmodule ExBinance.MixProject do
+defmodule ExTokocrypto.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :ex_binance,
+      app: :ex_tokocrypto,
       version: "0.0.10",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
@@ -39,13 +39,13 @@ defmodule ExBinance.MixProject do
     ]
   end
 
-  defp description, do: "Binance API Client for Elixir"
+  defp description, do: "Tokocrypto API Client for Elixir"
 
   defp package do
     [
       licenses: ["MIT"],
       maintainers: ["Alex Kwiatkowski"],
-      links: %{"GitHub" => "https://github.com/fremantle-capital/ex_binance"}
+      links: %{"GitHub" => "https://github.com/ukazap/ex_tokocrypto"}
     ]
   end
 end
